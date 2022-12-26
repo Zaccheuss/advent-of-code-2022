@@ -1,6 +1,11 @@
-export const day1 = () => {
-  const test: string = "blah";
+import {Day} from "./day";
 
-  console.log(test);
+export const day1: Day = {
+  solveForPartOne(input: string) {
+    let inArray: string[] = input.toString().split("\n");
+    return inArray[0];
+  },
+  solveForPartTwo(input: string) {
+    return "";
+  }
 }
-
