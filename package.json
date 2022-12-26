@@ -15,6 +15,6 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "npx tsc",
-    "test": "mocha"
+    "test": "mocha 'dist/**/*.spec.js'"
   }
 }
