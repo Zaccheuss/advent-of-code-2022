@@ -1,9 +1,10 @@
 import {Day} from "./day";
 import {day1} from "./day-1";
 import {day2} from "./day-2";
+import {day3} from "./day-3";
 import fs from "fs";
 
-const days: Day[] = [ day1, day2 ];
+const days: Day[] = [ day1, day2, day3 ];
 
 const runDay = async (day: number, part: number, isSampleInput: boolean = false) => {
   const dayToRun = days[day - 1];
