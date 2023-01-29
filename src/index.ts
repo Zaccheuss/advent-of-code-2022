@@ -2,9 +2,10 @@ import {Day} from "./day";
 import {day1} from "./day-1";
 import {day2} from "./day-2";
 import {day3} from "./day-3";
+import {day4} from "./day-4";
 import fs from "fs";
 
-const days: Day[] = [ day1, day2, day3 ];
+const days: Day[] = [ day1, day2, day3, day4 ];
 
 const runDay = async (day: number, part: number, isSampleInput: boolean = false) => {
   const dayToRun = days[day - 1];
@@ -20,7 +21,7 @@ const runDay = async (day: number, part: number, isSampleInput: boolean = false)
   console.log(` --- day ${day} part ${part} solution: ${result} --- `);
 }
 
-const commandLineParams = process.argv.slice(2) as unknown[] as Number[];
+const commandLineParams = process.argv.slice(2) as unknown[] as number[];
 
 if (commandLineParams.length === 0) console.error("Specify which day to run");
 if (commandLineParams.length === 1) console.error("Specify part 1 or 2");
